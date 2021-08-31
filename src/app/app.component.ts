@@ -19,8 +19,9 @@ abstract class Pessoa {
     this.numberB = numberB;
   }
 
-  dizerAlgo(): void {
+  dizerAlgo(): string {
     console.log(this.palavra);
+    return this.palavra;
   }
   multiplicar(): void {
     console.log('Valor Multiplicado=' + this.numberA * this.numberB);
@@ -38,7 +39,6 @@ abstract class Pessoa {
     console.log('Valor do Resto da Divisão= ' + (this.numberA % this.numberB));
   }
 }
-
 class Aluno extends Pessoa {
   constructor(palavra: string, numberA: number, numberB: number) {
     super(palavra, numberA, numberB);
